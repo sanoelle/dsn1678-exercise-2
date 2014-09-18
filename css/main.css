@@ -102,6 +102,10 @@ body {
   top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
+  
+  -webkit-animation: slide-up 200ms ease-out;
+	animation: slide-up 200ms ease-out;
+  
 }
 
 /* ADDED HOVER TRANSITION HERE */
@@ -146,4 +150,22 @@ body {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #000;
+}
+
+@-webkit-keyframes slide-up{
+	0% {
+		top: 10em;
+	}
+	100%{
+		top: 0;
+	}
+}
+
+@keyframes slide-up{
+	0% {
+		top: 10em;
+	}
+	100%{
+		top: 0;
+	}
 }
